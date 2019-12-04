@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>tp Color Scheme</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="row">
+						<p id="p1">#e86133</p>
+						<p id="p2">#4d4d4f</p>
+						<p id="p3">#231F20</p>
+						<div class="one col-xs-4 col-sm-4 col-md-4 col-lg-4" onclick="copyToClipboard('#p1')">
+						</div>
+						<div class="two col-xs-4 col-sm-4 col-md-4 col-lg-4" onclick="copyToClipboard('#p2')">
+						</div>
+						<div class="three col-xs-4 col-sm-4 col-md-4 col-lg-4" onclick="copyToClipboard('#p3')">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+		function copyToClipboard(element) {
+		  var $temp = $("<input>");
+		  $("body").append($temp);
+		  $temp.val($(element).text()).select();
+		  document.execCommand("copy");
+		  $temp.remove();
+		}
+	</script>
+</html>
