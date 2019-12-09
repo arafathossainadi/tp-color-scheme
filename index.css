@@ -2,12 +2,12 @@ body{
 	overflow: hidden;
 }
 .one{
-	background-color: #e86133;
+	background-color: #FF530D;
 	min-height: 100vh;
 }
 
 .two{
-	background-color: #4d4d4f;
+	background-color: #162D8C;
 	height: 100vh;
 	/*overflow: hidden;*/
 }
